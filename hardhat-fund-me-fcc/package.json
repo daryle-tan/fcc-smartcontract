@@ -1,0 +1,31 @@
+{
+    "name": "hardhat-project",
+    "devDependencies": {
+        "@chainlink/contracts": "^0.3.1",
+        "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+        "@nomiclabs/hardhat-etherscan": "^3.0.0",
+        "@nomiclabs/hardhat-waffle": "^2.0.2",
+        "chai": "^4.3.4",
+        "dotenv": "^14.2.0",
+        "ethereum-waffle": "^3.4.0",
+        "ethers": "^5.7.2",
+        "hardhat": "^2.8.3",
+        "hardhat-deploy": "^0.11.18",
+        "hardhat-gas-reporter": "^1.0.7",
+        "prettier-plugin-solidity": "^1.0.0-beta.19",
+        "solidity-coverage": "^0.7.18"
+    },
+    "scripts": {
+        "test": "yarn hardhat test",
+        "test:staging": "hardhat test --network goerli",
+        "lint": "solhint 'contracts/*.sol'",
+        "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+        "format": "prettier --write .",
+        "coverage": "hardhat coverage",
+        "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+        "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
+    },
+    "dependencies": {
+        "yarn": "^1.22.19"
+    }
+}
